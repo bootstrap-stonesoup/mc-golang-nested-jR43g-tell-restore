@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-go-basic-dockerfile-only-private-dagt
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/bootstrap/rhtap-demo-twvb-tenant/mc-golang-nested/devfile-sample-go-basic-dockerfile-only-private-dagt@sha256:6692f13f7160e8c48334559415fbee8e3142b1531862936306d7b92aa62b5ff9
+        name: container-image
+        resources: {}
+status: {}
